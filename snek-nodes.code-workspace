@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../vyro-workflows/nested_nodes"
+		},
+		{
+			"path": "../vyro-workflows/js"
+		}
+	],
+	"settings": {
+		"editor.renderWhitespace": "all"
+	}
+}
