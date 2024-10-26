@@ -37,6 +37,7 @@ class aesthetics:
     RETURN_TYPES = ("IMAGE",)
     RETURN_NAMES = ("best",)
     FUNCTION = "main"
+    CATEGORY = "🐍 Snek Nodes"
 
     # OUTPUT_IS_LIST = (True, )
 
@@ -97,14 +98,14 @@ class aesthetics_v2:
             }
         }
 
-    RETURN_TYPES = ("IMAGE",)
-    RETURN_NAMES = ("best",)
+    RETURN_TYPES = ("IMAGE", "FLOAT")
+    RETURN_NAMES = ("best", "best_score")
     FUNCTION = "main"
-
+    CATEGORY = "🐍 Snek Nodes"
     # OUTPUT_IS_LIST = (True, )
 
     def main(self, image, text):
-        print("input", image)
+        #print("input", image)
 
         batch = []
         for img in image:
@@ -118,7 +119,7 @@ class aesthetics_v2:
         tensor_images = image[int(best_index.item())].unsqueeze(0)
 
         print("run")
-        return (tensor_images,)
+        return (tensor_images, result_tensor[int(best_index.item())])
 
 
 NODE_CLASS_MAPPINGS = {

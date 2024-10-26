@@ -67,6 +67,7 @@ class EagleAPI:
 
 class Send_to_Eagle:
     def __init__(self):
+        self.eagle_api = EagleAPI()
         self.output_dir = comfy_paths.output_directory
 
     @classmethod
@@ -74,10 +75,9 @@ class Send_to_Eagle:
         return {
             "required": {
                 "images": ("IMAGE",),
-#                "token": ("STRING", {"default": "Your token here"}),
                 "folder_name": ("STRING", {"default": "Folder Name on Eagle"}),
                 "description": ("STRING", {"default": "Your description here"}),
-                # "overwrite": ("BOOLEAN", {"default": True})  # New overwrite toggle
+                "tags": ("STRING", {"default": ""})  # New field for tags
             },
             "hidden": {
                 "prompt": "PROMPT", "extra_pnginfo": "EXTRA_PNGINFO"
@@ -85,51 +85,52 @@ class Send_to_Eagle:
         }
 
     RETURN_TYPES = ("STRING", "STRING",)
-    RETURN_NAMES = ("api_log","folder_id")
+    RETURN_NAMES = ("api_log", "folder_id")
     FUNCTION = "main"
     CATEGORY = "🐍 Snek Nodes"
 
-    # Function to create and get folder ID
     def get_or_create_folder(self, parent_folder, subfolder_name):
         folder_id = self.eagle_api.get_id_from_folder_name(subfolder_name)
         if folder_id is None:
-            # Create new folder and extract its ID from the response
             response = self.eagle_api.create_new_folder(subfolder_name, ID_parent=parent_folder)
-
             folder_id = response.get('data', {}).get('id')
         return folder_id
 
-    def main(self, images: torch.Tensor, folder_name, description, prompt=None, extra_pnginfo=None):
-        self.eagle_api = EagleAPI()
-        output_file = os.path.abspath(os.path.join(self.output_dir, "temp.png"))
+    def main(self, images: torch.Tensor, folder_name: str, description: str, tags: str = None, prompt: dict = None, extra_pnginfo: dict = None):
         log = []
-        for image in images:
-            i = 255. * image.cpu().numpy()
-            img = Image.fromarray(np.clip(i, 0, 255).astype(np.uint8))
+        folder_id = self.get_or_create_folder(None, folder_name)
 
-            metadata = PngInfo()
-            if prompt is not None:
-                metadata.add_text("prompt", json.dumps(prompt))
-            if extra_pnginfo is not None:
-                for x in extra_pnginfo:
-                    metadata.add_text(x, json.dumps(extra_pnginfo[x]))
-            exif_data = metadata
+        # Split the tags string into an array if tags exist
+        tags_array = tags.split(",") if tags else None
 
-            img.save(output_file, optimize=False, pnginfo=exif_data)
+        for idx, image in enumerate(images):
+            try:
+                img_array = (255. * image.cpu().numpy()).astype(np.uint8)
+                img = Image.fromarray(np.clip(img_array, 0, 255))
 
-            folder_id = self.get_or_create_folder(None, folder_name)
+                metadata = PngInfo()
+                if prompt:
+                    metadata.add_text("prompt", json.dumps(prompt))
+                if extra_pnginfo:
+                    for key, value in extra_pnginfo.items():
+                        metadata.add_text(key, json.dumps(value))
 
-            item = {
-                "path": output_file,
-                "name": "Comfy",
-                "annotation": description,
-                "tags": None
-            }
-            response = self.eagle_api.add_item_from_path(data=item, folder_id=folder_id)
-            log.append(f"Status: {response['status']}, Data: {response['data']}")
+                output_file = os.path.abspath(os.path.join(self.output_dir, f"temp_{idx}.png"))
+                img.save(output_file, optimize=False, pnginfo=metadata)
+
+                item = {
+                    "path": output_file,
+                    "name": f"Comfy_{idx}",
+                    "annotation": description,
+                    "tags": tags_array  # Include the tags array
+                }
+                response = self.eagle_api.add_item_from_path(data=item, folder_id=folder_id)
+                log.append(f"Status: {response['status']}, Data: {response['data']}")
+            except Exception as e:
+                log.append(f"Failed to process image {idx}: {str(e)}")
 
         log_str = "\n".join(log)
-        return (log_str, response['data'],)
+        return log_str, response['data']
 
 
 NODE_CLASS_MAPPINGS = {
