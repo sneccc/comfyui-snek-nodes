@@ -1,0 +1,15 @@
+[project]
+name = "comfyui-snek-nodes"
+description = "NODES:Aesthetics, Aesthetics V2, Load AI Toolkit Latent Flux, Send_to_Eagle"
+version = "1.0.0"
+license = {file = "LICENSE"}
+dependencies = ["git+https://github.com/openai/CLIP.git", "hpsv2"]
+
+[project.urls]
+Repository = "https://github.com/sneccc/comfyui-snek-nodes"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "comfyui-snek-nodes"
+Icon = ""
