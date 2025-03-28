@@ -1,16 +1,34 @@
 {
-  "templates": [
-    "A {character} {action} in a {location}, {lighting}, {style}.",
-    "{character} {action} through a {adj-location} {location}, {emotion} expression.",
-    "{adj-character} {character} {action} while {secondary-action}, {style} art.",
-    "Portrait of a {character} with {emotion} expression, {action} in a {location}.",
-    "Close-up of a {character} {action}, {lighting}, {style} style.",
-    "A {character} and another {character} {group-action} in a {adj-location} {location}.",
-    "A {character} {action} with a {prop}, set in a {location}.",
-    "{character} {action} under {lighting}, {emotion} mood.",
-    "Scene of a {adj-character} {character} {action} during {time-of-day}.",
-    "Candid shot of a {character} {action}, {style} composition."
-  ],
+  "modes": {
+    "CHARACTER_PORTRAIT": [
+      "Portrait of a {adj-character} {character}, {emotion} expression, wearing {attire}, {style} style, {lighting}.",
+      "Close-up on the face of a {character}, detailed {attire}, {emotion}, {lighting}, {style}.",
+      "{style} headshot of a {adj-character} {character}, focusing on their {emotion} state, {lighting}.",
+      "Studio portrait of a {character} in {attire}, {adj-character} demeanor, {style}, {lighting}.",
+      "Character concept art: {adj-character} {character}, showing {emotion}, wearing {attire}, {style}."
+    ],
+    "DYNAMIC_ACTION": [
+      "{character} dynamically {action} through the {adj-location} {location}, {style} motion blur, {lighting}.",
+      "High-speed capture of a {adj-character} {character} {action}, interacting with {prop}, {style}, {lighting}.",
+      "Two {character} locked in {group-action} amidst a chaotic {location}, {style}, dramatic {lighting}.",
+      "Energetic scene: {character} {action} while {secondary-action}, {style} art, {emotion} intensity, {lighting}.",
+      "{character} mid-{action} in a {adj-location} {location}, {style}, {time-of-day} lighting."
+    ],
+    "ATMOSPHERIC_SCENE": [
+      "A {mood} {adj-location} {location} at {time-of-day}, a lone {character} is {action}, {style}, {lighting}.",
+      "{style} landscape painting of a {adj-location} {location} under {weather}, featuring a distant {character} {action}.",
+      "The {mood} atmosphere of a {location}, {lighting} filters through, revealing a {adj-character} {character}, {style}.",
+      "{adj-location} {location} filled with {mood} ambience, a {character} performs {secondary-action}, {style}, {lighting}.",
+      "Eerie {lighting} in a {location}, hinting at the presence of a {character}, {mood}, {style}."
+    ],
+    "PROP_INTERACTION": [
+      "{character} holding a {prop}, examining it closely, {location} background, {style}, {lighting}.",
+      "The {adj-character} {character} uses a {prop} while {action}, {emotion}, {style}, {lighting}.",
+      "Close up on a {prop} wielded by a {character}, {adj-location} {location}, {style} details, {lighting}.",
+      "A {character} surrounded by multiple {prop} items in their {location} workshop, {action}, {style}, {lighting}.",
+      "{style} still life featuring a {prop} central to the story of a {character}, {mood} lighting."
+    ]
+  },
   "categories": {
     "character": [
       "astronaut", "pirate", "cowboy", "detective", "scientist", "knight", "samurai", 
@@ -18,14 +36,19 @@
       "elf", "dwarf", "fairy", "mermaid", "centaur", "robot", "angel", "demon", "ghost",
       "artist", "musician", "dancer", "chef", "doctor", "soldier", "pilot", "explorer",
       "archaeologist", "prince", "princess", "king", "queen", "warrior", "assassin",
-      "bartender", "librarian", "lumberjack", "miner", "sailor", "shaman", "monk", "nomad"
+      "bartender", "librarian", "lumberjack", "miner", "sailor", "shaman", "monk", "nomad",
+      "bounty hunter", "alchemist", "bard", "druid", "mercenary", "necromancer", "oracle",
+      "plague doctor", "ranger", "scribe", "summoner", "time traveler", "wanderer"
     ],
     "adj-character": [
       "mysterious", "elegant", "rugged", "battle-worn", "ancient", "young", "elderly",
       "cheerful", "somber", "stoic", "wounded", "powerful", "gentle", "fierce", "wise",
       "curious", "cautious", "brave", "timid", "excited", "nervous", "determined",
       "exhausted", "triumphant", "defeated", "hopeful", "desperate", "peaceful",
-      "chaotic", "heroic", "villainous", "ordinary", "extraordinary", "enchanted"
+      "chaotic", "heroic", "villainous", "ordinary", "extraordinary", "enchanted",
+      "cunning", "haunted", "notorious", "legendary", "forgotten", "infamous", "blessed",
+      "cursed", "enlightened", "feral", "immortal", "corrupted", "redeemed", "outcast",
+      "revered", "dishonored", "vengeful", "reluctant", "destined", "accursed"
     ],
     "action": [
       "walking", "running", "jumping", "climbing", "dancing", "fighting", "meditating",
@@ -33,7 +56,10 @@
       "sleeping", "cooking", "eating", "drinking", "swimming", "flying", "falling",
       "hiding", "searching", "building", "destroying", "repairing", "creating",
       "observing", "studying", "teaching", "learning", "hunting", "fishing",
-      "gathering", "celebrating", "mourning", "escaping", "chasing", "waiting"
+      "gathering", "celebrating", "mourning", "escaping", "chasing", "waiting",
+      "defending", "casting", "summoning", "brewing", "forging", "weaving", "carving",
+      "conjuring", "performing", "commanding", "negotiating", "infiltrating", "ambushing",
+      "bargaining", "journeying", "traversing", "confronting", "beseeching", "excavating"
     ],
     "secondary-action": [
       "holding a map", "carrying a sword", "wearing a mask", "looking at the stars",
@@ -41,13 +67,21 @@
       "covering their face", "adjusting their hat", "holding a book", "reading a letter",
       "drawing in a sketchbook", "playing an instrument", "cooking a meal", 
       "examining an artifact", "tending to a wound", "aiming a weapon", "casting a spell",
-      "riding a horse", "petting an animal", "whispering a secret", "counting coins"
+      "riding a horse", "petting an animal", "whispering a secret", "counting coins",
+      "clutching an amulet", "reciting an incantation", "deciphering ancient text",
+      "mixing potions", "feeding a familiar", "sharpening a blade", "mending armor",
+      "collecting herbs", "hiding a treasure", "tracking footprints", "lighting a signal fire",
+      "bartering with merchants", "sketching a map", "transcribing a prophecy", "repairing machinery"
     ],
     "group-action": [
       "discussing", "arguing", "collaborating", "celebrating", "fighting", "dancing",
       "trading", "sharing a meal", "playing a game", "planning a mission", "telling stories",
       "making music", "performing a ritual", "attending a ceremony", "exploring together",
-      "building something", "hiding from danger", "escaping from enemies", "negotiating"
+      "building something", "hiding from danger", "escaping from enemies", "negotiating",
+      "forging an alliance", "breaking an oath", "staging an ambush", "dividing spoils",
+      "conducting research", "mounting a rescue", "organizing a rebellion", "decoding a message",
+      "preparing for battle", "holding council", "sealing a pact", "forming a circle",
+      "exchanging secrets", "brewing conspiracy", "embarking on a quest", "bearing witness"
     ],
     "location": [
       "forest", "desert", "mountain", "cave", "beach", "ocean", "lake", "river", "swamp",
@@ -56,35 +90,51 @@
       "ruins", "library", "laboratory", "factory", "workshop", "tavern", "inn", "market",
       "garden", "park", "cemetery", "dungeon", "mine", "lighthouse", "windmill", "farm",
       "harbor", "ship", "spacecraft", "space station", "alien planet", "other dimension",
-      "dream world", "afterlife", "underworld", "parallel universe", "ancient civilization"
+      "dream world", "afterlife", "underworld", "parallel universe", "ancient civilization",
+      "arena", "catacombs", "citadel", "colosseum", "courtyard", "crypt", "docks",
+      "forgotten city", "fortress", "great hall", "hanging gardens", "monastery", 
+      "nexus point", "oasis", "observatory", "outpost", "portal", "prison", "sanctuary",
+      "throne room", "tower", "trading post", "vault", "ziggurat"
     ],
     "adj-location": [
       "abandoned", "ancient", "mysterious", "sacred", "enchanted", "haunted", "peaceful",
       "chaotic", "bustling", "quiet", "foggy", "stormy", "sunny", "moonlit", "dark",
       "colorful", "barren", "lush", "frozen", "burning", "flooded", "crumbling",
       "luxurious", "modest", "hidden", "exposed", "dangerous", "safe", "underground",
-      "floating", "underwater", "ornate", "simple", "fortified", "ruined"
+      "floating", "underwater", "ornate", "simple", "fortified", "ruined",
+      "corrupted", "desolate", "ethereal", "forbidden", "hallowed", "infamous", "labyrinthine",
+      "magnificent", "oppressive", "pristine", "secluded", "shimmering", "sunken", "timeless",
+      "treacherous", "uncharted", "verdant", "volatile", "withered"
     ],
     "prop": [
       "sword", "shield", "wand", "staff", "book", "scroll", "map", "compass", "telescope",
       "microscope", "potion", "lantern", "torch", "candle", "key", "lock", "chest",
       "artifact", "gem", "crown", "mask", "hat", "cloak", "gloves", "boots", "backpack",
       "bag", "instrument", "letter", "photograph", "painting", "sculpture", "tool",
-      "weapon", "device", "machine", "vehicle", "food", "drink", "plant", "animal"
+      "weapon", "device", "machine", "vehicle", "food", "drink", "plant", "animal",
+      "crystal ball", "divination cards", "familiar", "grimoire", "hourglass", "locket",
+      "magical ring", "mystical orb", "pendulum", "phylactery", "relic", "rune stones",
+      "scrying mirror", "sigil", "spellbook", "talisman", "totem"
     ],
     "lighting": [
       "soft moonlight", "harsh sunlight", "golden sunset", "blue dawn", "candlelight",
       "torchlight", "firelight", "starlight", "neon glow", "lightning flash", "dim light",
       "bright light", "warm glow", "cool luminescence", "dramatic shadows", "silhouette",
       "backlighting", "spotlights", "ambient glow", "magical illumination", "god rays",
-      "lantern light", "bioluminescence", "rainbow reflections", "ethereal glow"
+      "lantern light", "bioluminescence", "rainbow reflections", "ethereal glow",
+      "aurora borealis", "celestial light", "crystal reflections", "divine radiance",
+      "eclipse light", "foxfire", "glowing runes", "halo effect", "infernal glow",
+      "iridescent sheen", "portal emanations", "prismatic beams", "spectral illumination"
     ],
     "emotion": [
       "happy", "sad", "angry", "fearful", "surprised", "disgusted", "contemptuous",
       "proud", "ashamed", "guilty", "anxious", "calm", "excited", "bored", "interested",
       "curious", "amused", "confused", "determined", "disappointed", "embarrassed",
       "enthusiastic", "grateful", "hopeful", "hurt", "jealous", "lonely", "loving",
-      "nostalgic", "overwhelmed", "peaceful", "relieved", "satisfied", "worried"
+      "nostalgic", "overwhelmed", "peaceful", "relieved", "satisfied", "worried",
+      "awestruck", "betrayed", "defiant", "ecstatic", "forlorn", "haunted", "indignant",
+      "melancholic", "remorseful", "resigned", "reverent", "serene", "stoic", "suspicious",
+      "vindicated", "vulnerable", "wistful", "yearning"
     ],
     "style": [
       "photorealistic", "impressionist", "expressionist", "cubist", "surrealist", 
@@ -92,13 +142,103 @@
       "modernist", "fantasy", "sci-fi", "steampunk", "cyberpunk", "anime", "manga", 
       "cartoon", "noir", "gothic", "folk art", "concept art", "storybook illustration",
       "oil painting", "watercolor", "pencil sketch", "digital art", "3D rendering",
-      "cinematic", "documentary", "film still", "studio portrait", "street photography"
+      "cinematic", "documentary", "film still", "studio portrait", "street photography",
+      "art deco", "biomechanical", "chiaroscuro", "dark fantasy", "dieselpunk", 
+      "etching", "fresco", "heroic fantasy", "isometric", "low poly", "magical realism",
+      "neoclassical", "pointillism", "propaganda poster", "rococo", "silhouette art",
+      "trompe l'oeil", "ukiyo-e", "vaporwave"
     ],
     "time-of-day": [
       "dawn", "sunrise", "morning", "noon", "afternoon", "sunset", "dusk", "twilight",
       "evening", "night", "midnight", "blue hour", "golden hour", "a solar eclipse",
       "a lunar eclipse", "a meteor shower", "a thunderstorm", "heavy rain", "a blizzard",
-      "a heat wave", "dense fog", "a rainbow", "a blood moon", "the witching hour"
+      "a heat wave", "dense fog", "a rainbow", "a blood moon", "the witching hour",
+      "first light", "high noon", "gloaming", "deepest night", "between worlds hour",
+      "solstice", "equinox", "planetary alignment", "quantum hour", "time suspension"
+    ],
+    "attire": [
+      "elaborate robes", "tattered cloak", "gleaming armor", "simple tunic", "rugged leather garments",
+      "flowing silk gown", "ceremonial vestments", "ragged peasant clothes", "royal finery",
+      "utilitarian uniform", "tribal adornments", "futuristic exosuit", "ancient ceremonial dress",
+      "practical adventure gear", "mystical enchanted garb", "steampunk contraptions", "battle-scarred outfit",
+      "concealing hooded cloak", "revealing tribal attire", "mechanical augmented suit",
+      "glowing magical vestments", "symbolic religious habit", "ornate noble costume", "minimal savage garb",
+      "layered nomadic clothing", "theatrical performance costume", "functional military uniform",
+      "decorative cultural garments", "weather-appropriate wilderness outfit", "intimidating war paint"
+    ],
+    "backstory": [
+      "a forgotten royal lineage", "a prophecy unfulfilled", "years of imprisonment", "betrayal by loved ones", 
+      "a mysterious childhood encounter", "the destruction of their homeland", "a deal with supernatural forces",
+      "the loss of their memory", "a great magical catastrophe", "humble origins transcended",
+      "a lifetime of scholarly pursuit", "an ancient curse", "exile from their community",
+      "survival against impossible odds", "witnessing cosmic events", "a spiritual awakening",
+      "the burden of forbidden knowledge", "service to a fallen master", "unexplained powers manifesting",
+      "being the sole survivor", "a traumatic transformation", "a pact with primordial entities",
+      "time dilation adventures", "crossing between worlds", "being chosen by an artifact"
+    ],
+    "companion": [
+      "spirit guardian", "loyal hound", "mystical familiar", "reluctant ally", "sentient weapon",
+      "bonded twin", "rescued orphan", "mechanical construct", "ancient entity", "telepathic beast",
+      "ghostly adviser", "diminutive sidekick", "enchanted object", "symbiotic organism", "former enemy",
+      "ancestral ghost", "trained falcon", "shapeshifting assistant", "summoned elemental", "spectral mount",
+      "shadow self", "artificial intelligence", "cosmic parasite", "otherworldly guide", "bound demon"
+    ],
+    "goal": [
+      "redemption for past sins", "vengeance against enemies", "discovering lost knowledge", "breaking an ancient curse",
+      "fulfilling a prophecy", "returning home", "finding a legendary artifact", "rescuing a loved one",
+      "preventing an apocalypse", "attaining immortality", "restoring balance to the world", "proving their worth",
+      "escaping their fate", "toppling a corrupt regime", "protecting a sacred secret", "mastering forbidden powers",
+      "rebuilding what was lost", "uncovering their true identity", "completing their transformation",
+      "establishing a sanctuary", "solving an ancient mystery", "ascending to another plane", "reuniting separated souls",
+      "breaking a binding contract", "awakening primordial forces"
+    ],
+    "color-scheme": [
+      "rich blues and purples", "fiery reds and oranges", "earthy browns and greens", "ethereal pastels",
+      "stark black and white", "golden sepia tones", "cool teals and aquamarines", "vibrant neon colors",
+      "muted monochromatic", "high contrast complementary", "shadowy grayscale with red accents",
+      "verdant forest palette", "desert sandstone hues", "cosmic nebula colors", "dusky twilight shades",
+      "oceanic blues and greens", "autumnal rust and amber", "winter frost blues", "spring blossom pastels",
+      "metallic and iridescent", "blood and shadow tones", "ghostly translucent whites", "deep jewel tones",
+      "charred ash and ember", "celestial gold and silver"
+    ],
+    "weather": [
+      "howling blizzard", "torrential downpour", "gentle spring rain", "oppressive heat wave", "swirling fog",
+      "crackling lightning storm", "hurricane winds", "serene clear skies", "rolling fog banks", "heavy snow",
+      "ash-filled volcanic skies", "glittering ice storm", "sand-laden desert winds", "rainbow after rain",
+      "whispering breeze", "mysterious aurora", "suffocating humidity", "bone-chilling frost", "eerie calm",
+      "supernatural weather phenomenon", "glowing meteorite shower", "otherworldly storm", "time-frozen weather",
+      "dimensional weather fluctuations", "elemental convergence"
+    ],
+    "conflict": [
+      "an ancient blood feud", "a looming apocalyptic event", "corrupt authorities", "invading otherworldly entities",
+      "a spreading magical plague", "dwindling natural resources", "a power-hungry tyrant", "religious persecution",
+      "unstable reality fabric", "warring magical factions", "a broken natural balance", "technological catastrophe",
+      "forgotten cosmic threats", "betrayal within their order", "emergence of banned magic", "territorial disputes",
+      "a predatory supernatural being", "political conspiracy", "competition for a rare resource", "mysterious disappearances",
+      "their own inner demons", "a prophesied doom", "temporal paradoxes", "dimensional collapse", "forbidden knowledge"
+    ],
+    "mood": [
+      "melancholic", "triumphant", "foreboding", "whimsical", "suspenseful", "serene", "desperate", "hopeful",
+      "mysterious", "oppressive", "ethereal", "nostalgic", "adventurous", "somber", "joyful", "terrifying",
+      "awe-inspiring", "tense", "dreamlike", "nightmarish", "romantic", "brutal", "contemplative", "chaotic",
+      "transcendent", "ominous", "lonely", "majestic", "intimate", "surreal"
+    ],
+    "scene-setting": [
+      "vast open vistas", "claustrophobic confined spaces", "ancient forgotten architecture", "technological marvels",
+      "natural wonders", "supernatural manifestations", "historical turning points", "ley line convergences",
+      "seasonal transformations", "cultural celebrations", "spiritual pilgrimages", "military confrontations",
+      "everyday life disrupted", "political ceremonies", "magical experiments", "scientific breakthroughs",
+      "natural disasters", "celestial events", "crossroads of worlds", "temporal anomalies", "elemental confluences",
+      "wild untamed wilderness", "carefully cultivated gardens", "abandoned once-great civilizations",
+      "monumental engineering feats", "sacred religious sites", "interdimensional portals", "liminal threshold spaces"
+    ],
+    "era": [
+      "prehistoric times", "ancient civilizations", "medieval period", "renaissance era", "age of exploration",
+      "industrial revolution", "roaring twenties", "post-apocalyptic future", "far future", "alternate history",
+      "mythological age", "stone age", "bronze age", "iron age", "dark ages", "golden age", "information age",
+      "age of sail", "space colonization era", "post-human evolution", "steampunk Victorian age", "cyberpunk dystopia",
+      "atomic age", "interstellar civilization", "before recorded history", "after the fall of humanity",
+      "during the rise of magic", "during the decline of technology", "timeless realm", "era of gods walking the earth"
     ]
   }
 } 

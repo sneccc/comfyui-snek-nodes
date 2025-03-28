@@ -1,11 +1,30 @@
 {
-  "templates": [
-    "A {gen-modifier} portrait of a {fantasy-creature}.",
-    "{adj-beauty} {noun-fantasy}, {adj-horror} atmosphere, {gen-modifier} style.",
-    "{gen-modifier} scene featuring a {fantasy-creature} and a {noun-fantasy}.",
-    "An {adj-horror} {fantasy-creature} emerging from the shadows, {gen-modifier}.",
-    "Concept art for a {adj-beauty} {noun-fantasy}, style of {penciller}."
-  ],
+  "modes": {
+    "CREATURE_PORTRAIT": [
+      "A {gen-modifier} portrait of a {fantasy-creature}.",
+      "Headshot of a {fantasy-creature}, {gen-modifier} style.",
+      "{gen-modifier} rendering of the mythical {fantasy-creature}.",
+      "Close up on a {fantasy-creature}, {gen-modifier} technique."
+    ],
+    "BEAUTY_HORROR_MIX": [
+      "{adj-beauty} {fantasy-creature} with an {adj-horror} aura, {gen-modifier}.",
+      "A scene blending {adj-beauty} and {adj-horror}, featuring a {noun-fantasy}, {gen-modifier} style.",
+      "The {adj-beauty} face of a {fantasy-creature} hiding {adj-horror} secrets, {gen-modifier}.",
+      "{adj-horror} landscape containing a surprisingly {adj-beauty} {noun-fantasy}, {gen-modifier}."
+    ],
+    "SCENE_CONCEPT": [
+      "{gen-modifier} scene featuring a {fantasy-creature} encountering a {noun-fantasy}.",
+      "Concept art: {fantasy-creature} defending a {noun-fantasy}, {gen-modifier} style.",
+      "An {adj-horror} {noun-fantasy} guarded by a {fantasy-creature}, {gen-modifier}.",
+      "Battle between two {fantasy-creature} over a {noun-fantasy}, {gen-modifier} artwork."
+    ],
+    "PENCILLER_STYLE": [
+      "A {fantasy-creature} drawn in the style of {penciller}, {gen-modifier} elements.",
+      "Concept art for a {noun-fantasy} inspired by {penciller}, {gen-modifier} color palette.",
+      "{penciller}-esque depiction of a {adj-beauty} {fantasy-creature}, {gen-modifier}.",
+      "Horror scene featuring {adj-horror} {noun-fantasy}, reminiscent of {penciller}, {gen-modifier}."
+    ]
+  },
   "categories": {
     "fantasy-creature": [
       "Centaurs", "Demon", "Dragons", "Dwarves", "Elves", "Evil Spirit", "Ghost", 

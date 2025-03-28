@@ -1,59 +1,79 @@
 {
-    "templates": [
+  "modes": {
+    "SIMPLE_SUBJECT": [
       "A painting of a {noun} in the {style} style, {lighting}.",
-      "Epic {adjective} {noun}, trending on artstation, {lighting}, {artist} influence.",
-      "{style} illustration of a {noun}.",
-      "Mysterious {noun} found in a {location}, {adjective} atmosphere, {lighting}."
+      "Portrait of a {noun}, {style}, {lighting}.",
+      "{style} illustration of a {noun}, {adjective} mood.",
+      "A single {noun} rendered in {style}, influenced by {artist}."
     ],
-    "categories": {
-      "noun": [
-        "astronaut",
-        "crystal",
-        "dragon",
-        "library",
-        "forest spirit",
-        "cyberpunk city",
-        "ancient tree"
-      ],
-      "style": [
-        "photorealistic",
-        "oil painting",
-        "watercolor",
-        "anime",
-        "low poly",
-        "pixel art",
-        "art deco"
-      ],
-      "lighting": [
-        "cinematic lighting",
-        "dramatic lighting",
-        "soft light",
-        "volumetric rays",
-        "neon glow",
-        "moonlight"
-      ],
-      "adjective": [
-        "glowing",
-        "serene",
-        "chaotic",
-        "miniature",
-        "colossal",
-        "vibrant",
-        "desaturated"
-      ],
-      "artist": [
-        "Van Gogh",
-        "Hokusai",
-        "Studio Ghibli",
-        "Greg Rutkowski",
-        "Wes Anderson"
-      ],
-      "location": [
-        "forgotten temple",
-        "misty swamp",
-        "floating island",
-        "underwater city",
-        "hidden valley"
-      ]
-    }
+    "ARTIST_FOCUS": [
+      "A {noun} in the distinct style of {artist}, {lighting}.",
+      "Inspired by {artist}: {adjective} {noun} in a {location}.",
+      "Artwork reminiscent of {artist}, depicting a {noun}, {style} rendering, {lighting}.",
+      "{artist} style painting of a {noun} with {lighting}."
+    ],
+    "LOCATION_FOCUS": [
+      "Exploring the {location}, {style}, {lighting}.",
+      "A {adjective} {location}, {style} artwork, {artist} influence.",
+      "Inside the {location}: a hidden {noun}, {lighting}, {style}.",
+      "Panoramic view of the {location}, {style} painting, {lighting}."
+    ],
+    "ADJECTIVE_FOCUS": [
+      "A very {adjective} {noun}, {style}, {lighting}.",
+      "{adjective} feeling in a {location}, artwork by {artist}, {style}.",
+      "The essence of {adjective}: a {noun} depicted in {style}, {lighting}.",
+      "{adjective} {noun}, {style}, {lighting}, trending on artstation."
+    ]
+  },
+  "categories": {
+    "noun": [
+      "astronaut",
+      "crystal",
+      "dragon",
+      "library",
+      "forest spirit",
+      "cyberpunk city",
+      "ancient tree"
+    ],
+    "style": [
+      "photorealistic",
+      "oil painting",
+      "watercolor",
+      "anime",
+      "low poly",
+      "pixel art",
+      "art deco"
+    ],
+    "lighting": [
+      "cinematic lighting",
+      "dramatic lighting",
+      "soft light",
+      "volumetric rays",
+      "neon glow",
+      "moonlight"
+    ],
+    "adjective": [
+      "glowing",
+      "serene",
+      "chaotic",
+      "miniature",
+      "colossal",
+      "vibrant",
+      "desaturated"
+    ],
+    "artist": [
+      "Van Gogh",
+      "Hokusai",
+      "Studio Ghibli",
+      "Greg Rutkowski",
+      "Wes Anderson"
+    ],
+    "location": [
+      "forgotten temple",
+      "misty swamp",
+      "floating island",
+      "underwater city",
+      "hidden valley"
+    ]
   }
+}
