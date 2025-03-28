@@ -1,0 +1,59 @@
+{
+    "templates": [
+      "A painting of a {noun} in the {style} style, {lighting}.",
+      "Epic {adjective} {noun}, trending on artstation, {lighting}, {artist} influence.",
+      "{style} illustration of a {noun}.",
+      "Mysterious {noun} found in a {location}, {adjective} atmosphere, {lighting}."
+    ],
+    "categories": {
+      "noun": [
+        "astronaut",
+        "crystal",
+        "dragon",
+        "library",
+        "forest spirit",
+        "cyberpunk city",
+        "ancient tree"
+      ],
+      "style": [
+        "photorealistic",
+        "oil painting",
+        "watercolor",
+        "anime",
+        "low poly",
+        "pixel art",
+        "art deco"
+      ],
+      "lighting": [
+        "cinematic lighting",
+        "dramatic lighting",
+        "soft light",
+        "volumetric rays",
+        "neon glow",
+        "moonlight"
+      ],
+      "adjective": [
+        "glowing",
+        "serene",
+        "chaotic",
+        "miniature",
+        "colossal",
+        "vibrant",
+        "desaturated"
+      ],
+      "artist": [
+        "Van Gogh",
+        "Hokusai",
+        "Studio Ghibli",
+        "Greg Rutkowski",
+        "Wes Anderson"
+      ],
+      "location": [
+        "forgotten temple",
+        "misty swamp",
+        "floating island",
+        "underwater city",
+        "hidden valley"
+      ]
+    }
+  }

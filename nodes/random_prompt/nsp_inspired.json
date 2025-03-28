@@ -1,0 +1,70 @@
+{
+  "templates": [
+    "A {gen-modifier} portrait of a {fantasy-creature}.",
+    "{adj-beauty} {noun-fantasy}, {adj-horror} atmosphere, {gen-modifier} style.",
+    "{gen-modifier} scene featuring a {fantasy-creature} and a {noun-fantasy}.",
+    "An {adj-horror} {fantasy-creature} emerging from the shadows, {gen-modifier}.",
+    "Concept art for a {adj-beauty} {noun-fantasy}, style of {penciller}."
+  ],
+  "categories": {
+    "fantasy-creature": [
+      "Centaurs", "Demon", "Dragons", "Dwarves", "Elves", "Evil Spirit", "Ghost", 
+      "Gnomes", "King", "Knight", "Magician", "Minotaur", "Pegasus", "Phoenix", 
+      "Prince", "Princess", "Queen", "Siren", "Sorceress", "Sprite", "Trolls", 
+      "Valkyrie", "Vampire", "Warlock", "Werewolf", "Wizard", "Zombie", "goblins", 
+      "gryphons", "ogres", "orcs", "phylakes", "trolls", "unicorns", "witches", "wizards"
+    ],
+    "gen-modifier": [
+      "60s kitsch and psychedelia", "abstract illusionism", "ambrotype", 
+      "american romanticism", "anaglyph effect", "blueprint", "brutalism", 
+      "chillwave", "cottagecore", "crayon art", "cyanotype", "dark academia", 
+      "digital art", "dutch golden age", "fractalism", "fresco", "futuresynth", 
+      "german romanticism", "glitch art", "gothic art", "graffiti", "hyperrealism", 
+      "infrared", "Lovecraftian", "magic realism", "multiple exposure", 
+      "narrative realism", "photorealism", "realism", "retrowave", "Sabattier effect", 
+      "still life", "street art", "surrealism", "synthwave", "vaporwave", 
+      "afrofuturism", "anime", "avant-garde", "calotype", "camcorder effect", 
+      "cubism", "daguerreotype", "expressionism", "figurativism", "fisheye lens", 
+      "gothic", "holography", "impressionism", "inverted colors", "long exposure", 
+      "macro lens", "manga", "modernism", "naturalism", "optical illusion", 
+      "positivism", "stuckism", "symbolism", "telephoto lens", "tilt-shift", 
+      "tintype", "tonalism"
+    ],
+    "adj-beauty": [
+      "aesthetic", "attractive", "beauteous", "bonny", "comely", "cute", "fair", 
+      "fetching", "good-looking", "gorgeous", "handsome", "knockout", "lovely", 
+      "pretty", "ravishing", "seemly", "sightly", "stunning", "alluring", 
+      "appealing", "charming", "delightful", "engaging", "fascinating", "glamorous", 
+      "elegant", "exquisite", "glorious", "magnificent", "resplendent", "splendid", 
+      "statuesque", "sublime", "superb", "flawless", "perfect", "radiant", "dainty", 
+      "delicate", "personable", "pleasant", "presentable", "desirable", "dishy", 
+      "foxy", "hot", "luscious", "pulchritudinous", "seductive", "sexy", 
+      "eye-catching", "flamboyant", "flashy", "glossy", "showstopping", "showy", 
+      "striking", "photogenic"
+    ],
+    "noun-fantasy": [
+      "Alchemy", "Armor", "Castle", "Crypt", "Dragon", "Dungeon", "Gems", "Goblin", 
+      "Gold", "Griffin", "Guild", "Hippogriff", "Imp", "King", "Knight", "Lich", 
+      "Magic Spell", "Monster", "Moonbeam", "Mystic", "Necromancer", "Nightmare", 
+      "Queen", "Scroll", "Serpent", "Shadows", "Shard", "Skeleton", "Sorcerer", 
+      "Sorceress", "Spirit", "Stronghold", "Sword", "Tavern", "Templar", "Treasure", 
+      "Undead", "Underworld", "Vampire", "Warlock", "Warrior", "Witch", "Wizard"
+    ],
+    "adj-horror": [
+      "alarming", "dire", "dreadful", "fearful", "fearsome", "forbidding", 
+      "foreboding", "frightening", "hair-raising", "horrendous", "horrible", 
+      "horrifying", "intimidating", "shocking", "spine-chilling", "terrible", 
+      "terrifying", "daunting", "demoralizing", "disconcerting", "discouraging", 
+      "dismaying", "disquieting", "distressing", "disturbing", "perturbing", 
+      "startling", "threatening", "troubling", "unnerving", "atrocious", "awful", 
+      "frightful", "ghastly", "grisly", "gruesome", "hideous", "horrid", 
+      "monstrous", "repulsive"
+    ],
+    "penciller": [
+       "Alex Ross", "Art Spiegelman", "Brian Bolland", "Charles Burns", "Chris Bachalo",
+       "Dave McKean", "David Lloyd", "David Mazzucchelli", "Enki Bilal", "Fiona Staples",
+       "Frank Miller", "Jean Giraud (Moebius)", "Jock", "Juanjo Guarnido", "Katsuhiro Ôtomo",
+       "Mike Mignola", "Olivier Ledroit", "Sam Keith", "Steve Dillon", "Tim Sale"
+    ]
+  }
+} 

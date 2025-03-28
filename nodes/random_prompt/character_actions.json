@@ -1,0 +1,104 @@
+{
+  "templates": [
+    "A {character} {action} in a {location}, {lighting}, {style}.",
+    "{character} {action} through a {adj-location} {location}, {emotion} expression.",
+    "{adj-character} {character} {action} while {secondary-action}, {style} art.",
+    "Portrait of a {character} with {emotion} expression, {action} in a {location}.",
+    "Close-up of a {character} {action}, {lighting}, {style} style.",
+    "A {character} and another {character} {group-action} in a {adj-location} {location}.",
+    "A {character} {action} with a {prop}, set in a {location}.",
+    "{character} {action} under {lighting}, {emotion} mood.",
+    "Scene of a {adj-character} {character} {action} during {time-of-day}.",
+    "Candid shot of a {character} {action}, {style} composition."
+  ],
+  "categories": {
+    "character": [
+      "astronaut", "pirate", "cowboy", "detective", "scientist", "knight", "samurai", 
+      "ninja", "wizard", "witch", "vampire", "werewolf", "cyborg", "android", "alien",
+      "elf", "dwarf", "fairy", "mermaid", "centaur", "robot", "angel", "demon", "ghost",
+      "artist", "musician", "dancer", "chef", "doctor", "soldier", "pilot", "explorer",
+      "archaeologist", "prince", "princess", "king", "queen", "warrior", "assassin",
+      "bartender", "librarian", "lumberjack", "miner", "sailor", "shaman", "monk", "nomad"
+    ],
+    "adj-character": [
+      "mysterious", "elegant", "rugged", "battle-worn", "ancient", "young", "elderly",
+      "cheerful", "somber", "stoic", "wounded", "powerful", "gentle", "fierce", "wise",
+      "curious", "cautious", "brave", "timid", "excited", "nervous", "determined",
+      "exhausted", "triumphant", "defeated", "hopeful", "desperate", "peaceful",
+      "chaotic", "heroic", "villainous", "ordinary", "extraordinary", "enchanted"
+    ],
+    "action": [
+      "walking", "running", "jumping", "climbing", "dancing", "fighting", "meditating",
+      "reading", "writing", "painting", "singing", "playing", "working", "resting",
+      "sleeping", "cooking", "eating", "drinking", "swimming", "flying", "falling",
+      "hiding", "searching", "building", "destroying", "repairing", "creating",
+      "observing", "studying", "teaching", "learning", "hunting", "fishing",
+      "gathering", "celebrating", "mourning", "escaping", "chasing", "waiting"
+    ],
+    "secondary-action": [
+      "holding a map", "carrying a sword", "wearing a mask", "looking at the stars",
+      "holding a torch", "using a compass", "wielding a wand", "checking the time",
+      "covering their face", "adjusting their hat", "holding a book", "reading a letter",
+      "drawing in a sketchbook", "playing an instrument", "cooking a meal", 
+      "examining an artifact", "tending to a wound", "aiming a weapon", "casting a spell",
+      "riding a horse", "petting an animal", "whispering a secret", "counting coins"
+    ],
+    "group-action": [
+      "discussing", "arguing", "collaborating", "celebrating", "fighting", "dancing",
+      "trading", "sharing a meal", "playing a game", "planning a mission", "telling stories",
+      "making music", "performing a ritual", "attending a ceremony", "exploring together",
+      "building something", "hiding from danger", "escaping from enemies", "negotiating"
+    ],
+    "location": [
+      "forest", "desert", "mountain", "cave", "beach", "ocean", "lake", "river", "swamp",
+      "jungle", "tundra", "savanna", "meadow", "island", "valley", "cliff", "waterfall",
+      "city", "town", "village", "castle", "palace", "temple", "church", "cathedral",
+      "ruins", "library", "laboratory", "factory", "workshop", "tavern", "inn", "market",
+      "garden", "park", "cemetery", "dungeon", "mine", "lighthouse", "windmill", "farm",
+      "harbor", "ship", "spacecraft", "space station", "alien planet", "other dimension",
+      "dream world", "afterlife", "underworld", "parallel universe", "ancient civilization"
+    ],
+    "adj-location": [
+      "abandoned", "ancient", "mysterious", "sacred", "enchanted", "haunted", "peaceful",
+      "chaotic", "bustling", "quiet", "foggy", "stormy", "sunny", "moonlit", "dark",
+      "colorful", "barren", "lush", "frozen", "burning", "flooded", "crumbling",
+      "luxurious", "modest", "hidden", "exposed", "dangerous", "safe", "underground",
+      "floating", "underwater", "ornate", "simple", "fortified", "ruined"
+    ],
+    "prop": [
+      "sword", "shield", "wand", "staff", "book", "scroll", "map", "compass", "telescope",
+      "microscope", "potion", "lantern", "torch", "candle", "key", "lock", "chest",
+      "artifact", "gem", "crown", "mask", "hat", "cloak", "gloves", "boots", "backpack",
+      "bag", "instrument", "letter", "photograph", "painting", "sculpture", "tool",
+      "weapon", "device", "machine", "vehicle", "food", "drink", "plant", "animal"
+    ],
+    "lighting": [
+      "soft moonlight", "harsh sunlight", "golden sunset", "blue dawn", "candlelight",
+      "torchlight", "firelight", "starlight", "neon glow", "lightning flash", "dim light",
+      "bright light", "warm glow", "cool luminescence", "dramatic shadows", "silhouette",
+      "backlighting", "spotlights", "ambient glow", "magical illumination", "god rays",
+      "lantern light", "bioluminescence", "rainbow reflections", "ethereal glow"
+    ],
+    "emotion": [
+      "happy", "sad", "angry", "fearful", "surprised", "disgusted", "contemptuous",
+      "proud", "ashamed", "guilty", "anxious", "calm", "excited", "bored", "interested",
+      "curious", "amused", "confused", "determined", "disappointed", "embarrassed",
+      "enthusiastic", "grateful", "hopeful", "hurt", "jealous", "lonely", "loving",
+      "nostalgic", "overwhelmed", "peaceful", "relieved", "satisfied", "worried"
+    ],
+    "style": [
+      "photorealistic", "impressionist", "expressionist", "cubist", "surrealist", 
+      "minimalist", "baroque", "renaissance", "pop art", "art nouveau", "abstract", 
+      "modernist", "fantasy", "sci-fi", "steampunk", "cyberpunk", "anime", "manga", 
+      "cartoon", "noir", "gothic", "folk art", "concept art", "storybook illustration",
+      "oil painting", "watercolor", "pencil sketch", "digital art", "3D rendering",
+      "cinematic", "documentary", "film still", "studio portrait", "street photography"
+    ],
+    "time-of-day": [
+      "dawn", "sunrise", "morning", "noon", "afternoon", "sunset", "dusk", "twilight",
+      "evening", "night", "midnight", "blue hour", "golden hour", "a solar eclipse",
+      "a lunar eclipse", "a meteor shower", "a thunderstorm", "heavy rain", "a blizzard",
+      "a heat wave", "dense fog", "a rainbow", "a blood moon", "the witching hour"
+    ]
+  }
+} 
