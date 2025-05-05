@@ -29,8 +29,35 @@
       "Retro 16‑bit pixel‑art icon of a {subject}, 32×32 grid, limited to NES palette ({primary_color}, {secondary_color}, {accent_color}).",
       "Blocky pixel glyph: {subject} rendered in chunky pixels with crisp edges, transparent background.",
       "Isometric pixel icon of {subject}, soft dither shading, pastel {primary_color}/{secondary_color} scheme."
+    ],
+
+    "GUMMY_SQUIRCLE": [
+      "App‑style icon: a {subject} as a glossy ‘gummy’ 3‑D object centred on a soft‑shadow {background_shape} squircle, glassy highlight top‑left, deep ambient occlusion bottom‑right.",
+      "Pillowy 3‑D glyph of {subject}; puffy plastic look, vibrant {primary_color} to {secondary_color} radial gradient, subtle inner shadow, floating over a blurred backdrop.",
+      "High‑resolution 1024×1024 icon, rounded square canvas; soft‑extruded {subject} with translucent edges and specular sparkle, background basked in {lighting}."
+    ],
+    "GLASSMORPH_CARD": [
+      "Sleek glass‑morph tile: frosted {background_shape} card, backdrop blur, inner glow; minimalist {subject} line‑icon etched in white with {stroke_weight} weight.",
+      "Semi‑transparent glass pane icon—{subject} glyph centred, white outline, rainbow refraction edges, grainy noise texture at 8 % opacity.",
+      "Floating translucent card displaying {subject}; cool‑tone {primary_color} to {secondary_color} linear gradient behind, bright rim‑light, subtle drop shadow."
+    ],
+    "NEON_RIM_LIGHT": [
+      "Dark‑mode icon: {subject} rendered in matte charcoal with vivid {accent_color} neon rim‑light, vignetted squircle backdrop.",
+      "Cyber‑glow badge of {subject}; inner core is near‑black, edges emit {accent_color} light bloom, tiny starburst sparkles.",
+      "Futuristic hologram‑style {subject} icon, see‑through centre, bright neon contour, soft {lighting} from below."
+    ],
+    "SOFT_GRADIENT_DEPTH": [
+      "Layered depth icon—two offset {background_shape}s with smooth multi‑stop gradient ({primary_color}→{secondary_color}), elevated {subject} casting long soft shadow.",
+      "Modern material‑you tile: {subject} pictogram cut out of a raised plate; plate colour follows {primary_color}, platform colour {secondary_color}, extreme 45° light.",
+      "Subtle 3‑layer composition: back layer blurred, mid layer colourful gradient, top layer houses crisp white {subject} silhouette."
+    ],
+    "PUFFY_PIXEL": [
+      "Hybrid puffy‑pixel: blocky 16‑bit style {subject} but with soft depth, vibrant palette ({primary_color}, {secondary_color}, {accent_color}), tiny ambient shadow.",
+      "Isometric voxel icon of {subject}; bevelled cubes, candy gloss highlights, floating on transparent canvas.",
+      "Retro‑cute sprite—{subject} built on 32×32 grid, dithered shading, extra highlight pass for modern ‘gummy’ sheen."
     ]
   },
+
   "categories": {
     "subject": [
       "arrow", "bell", "bookmark", "calendar", "camera", "cart", "chat bubble", "check mark", "clock", "cloud", "code bracket", "compass", "credit card", "database", "document", "download", "envelope", "eye", "file folder", "flag", "flashlight", "floppy disk", "gear", "gift box", "globe", "heart", "home", "image", "key", "lamp", "leaf", "link", "lock", "location pin", "map", "microphone", "music note", "paint brush", "paperclip", "phone", "pie chart", "play button", "printer", "rocket", "search", "settings sliders", "share", "shield", "shopping bag", "star", "sun", "tag", "ticket", "trash can", "trophy", "upload", "user", "video camera", "wifi", "wallet", "battery", "bug", "bulb", "car", "cat", "dog", "dollar sign", "earth", "fire", "flower", "folder open", "graduation cap", "hammer", "headphones", "house plant", "ice cream", "joystick", "leafy branch", "magnet", "megaphone", "moon", "mountain", "news", "page break", "palette", "paper plane", "pencil", "presentation", "question mark", "rain drop", "robot", "scroll", "server rack", "shopping cart", "smartphone", "speech bubble", "stack", "stopwatch", "sword", "target", "thermometer", "toolbox", "traffic cone", "truck", "umbrella", "vector curve", "video play", "virus", "volume", "warning triangle", "wrench", "zap"
