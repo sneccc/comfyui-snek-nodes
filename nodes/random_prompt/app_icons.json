@@ -1,0 +1,75 @@
+{
+  "modes": {
+    "FLAT_MINIMAL": [
+      "A crisp flat‑design icon of a {subject} centred on a {background_shape} filled with {primary_color}, clean {stroke_weight} outline, no gradients.",
+      "Minimal glyph: {subject} rendered as solid {primary_color} on {secondary_color} {background_shape}, 45‑degree long‑shadow.",
+      "Simple two‑tone flat icon showing a {subject} with {embellishment} on a {background_shape}, palette limited to {primary_color} and {secondary_color}."
+    ],
+    "GRADIENT_PASTEL": [
+      "Soft pastel icon of a {subject} outlined in {stroke_weight} white, background is a {background_shape} with a smooth {gradient_direction} gradient from {primary_color} to {secondary_color}.",
+      "Dreamy duotone: {subject} in semi‑transparent white over a {gradient_direction} pastel blend ({primary_color}→{secondary_color}) inside a rounded {background_shape}.",
+      "Gentle gradient icon—{subject} silhouette, inner shadow, subtle grain texture, pastel {primary_color}/{secondary_color} hues."
+    ],
+    "OUTLINE_GLYPH": [
+      "Monoline icon depicting a {subject} using {stroke_weight} strokes, no fill, placed on transparent background.",
+      "Outlined symbol: {subject} with even {stroke_weight} line weight, cap‑rounded corners, keylines aligned to an {icon_grid} grid.",
+      "Linear icon: {subject} drawn as continuous path, {stroke_weight} weight, corners {corner_style}; negative space forms the {background_shape}."
+    ],
+    "3D_REALISTIC": [
+      "Isometric 3D icon of a {subject} built from glossy {material}, lit from top‑left ({lighting}), resting on a floating {background_shape}.",
+      "Highly detailed 3‑D render: {subject} made of {material} with {finish} finish, soft shadows, subtle depth‑of‑field.",
+      "Photorealistic miniature {subject} icon, {lighting}, reflective {material}, sitting on {secondary_color} matte {background_shape}."
+    ],
+    "SKEUOMORPH": [
+      "Classic skeuomorphic icon representing a {subject} crafted in {material} with {finish} texture, beveled edges, slight emboss.",
+      "Real‑world mimic: {subject} styled as tangible object, stitched leather {background_shape}, warm {lighting}.",
+      "Textured skeuo icon of {subject} on brushed metal {background_shape}, drop‑shadow and highlights for depth."
+    ],
+    "PIXEL_ART": [
+      "Retro 16‑bit pixel‑art icon of a {subject}, 32×32 grid, limited to NES palette ({primary_color}, {secondary_color}, {accent_color}).",
+      "Blocky pixel glyph: {subject} rendered in chunky pixels with crisp edges, transparent background.",
+      "Isometric pixel icon of {subject}, soft dither shading, pastel {primary_color}/{secondary_color} scheme."
+    ]
+  },
+  "categories": {
+    "subject": [
+      "arrow", "bell", "bookmark", "calendar", "camera", "cart", "chat bubble", "check mark", "clock", "cloud", "code bracket", "compass", "credit card", "database", "document", "download", "envelope", "eye", "file folder", "flag", "flashlight", "floppy disk", "gear", "gift box", "globe", "heart", "home", "image", "key", "lamp", "leaf", "link", "lock", "location pin", "map", "microphone", "music note", "paint brush", "paperclip", "phone", "pie chart", "play button", "printer", "rocket", "search", "settings sliders", "share", "shield", "shopping bag", "star", "sun", "tag", "ticket", "trash can", "trophy", "upload", "user", "video camera", "wifi", "wallet", "battery", "bug", "bulb", "car", "cat", "dog", "dollar sign", "earth", "fire", "flower", "folder open", "graduation cap", "hammer", "headphones", "house plant", "ice cream", "joystick", "leafy branch", "magnet", "megaphone", "moon", "mountain", "news", "page break", "palette", "paper plane", "pencil", "presentation", "question mark", "rain drop", "robot", "scroll", "server rack", "shopping cart", "smartphone", "speech bubble", "stack", "stopwatch", "sword", "target", "thermometer", "toolbox", "traffic cone", "truck", "umbrella", "vector curve", "video play", "virus", "volume", "warning triangle", "wrench", "zap"
+    ],
+    "background_shape": [
+      "circle", "square", "rounded square", "squircle", "hexagon", "octagon", "shield", "badge", "tear‑drop", "diamond", "ellipse", "starburst", "heart‑shape", "gear outline", "cloud silhouette"
+    ],
+    "primary_color": [
+      "Azure", "Cerise", "Coral", "Crimson", "Emerald", "Fuchsia", "Gold", "Indigo", "Lavender", "Lime", "Magenta", "Mint", "Orange", "Periwinkle", "Pink", "Purple", "Ruby", "Sapphire", "Sky blue", "Teal", "Turquoise", "Violet", "Yellow"
+    ],
+    "secondary_color": [
+      "Absolute Zero", "Baby pink", "Beige", "Black", "Blue gray", "Bronze", "Burgundy", "Charcoal", "Chocolate", "Cyan", "Eggshell", "Forest green", "Gray", "Ivory", "Khaki", "Mauve", "Navy", "Olive", "Peach", "Plum", "Rose", "Salmon", "Sand", "Sea green", "Silver", "Tan", "Taupe", "White"
+    ],
+    "accent_color": [
+      "Amber", "Aquamarine", "Chartreuse", "Electric cyan", "Flame", "Hot pink", "Laser lemon", "Neon green", "Neon orange", "Neon purple", "Scarlet", "Shamrock green", "Ultramarine"
+    ],
+    "stroke_weight": [
+      "hairline", "thin", "light", "regular", "medium", "bold", "extra‑bold"
+    ],
+    "finish": [
+      "matte", "glossy", "brushed metal", "frosted glass", "plastic", "rubberized", "ceramic", "leather", "wooden"
+    ],
+    "material": [
+      "glass", "polished steel", "chromed metal", "aluminium", "brass", "copper", "rose gold", "carbon fibre", "porcelain", "granite", "marble", "acrylic", "ice", "crystal", "paper", "fabric", "stone"
+    ],
+    "gradient_direction": [
+      "top‑to‑bottom", "bottom‑to‑top", "left‑to‑right", "right‑to‑left", "diagonal tl‑br", "diagonal bl‑tr", "radial", "angular"
+    ],
+    "lighting": [
+      "soft studio light", "dramatic rim light", "top‑left key light", "backlit glow", "neon edge light", "ambient occlusion"
+    ],
+    "icon_grid": [
+      "24‑pixel", "32‑pixel", "64‑pixel", "8‑pt keyline", "isometric 30°"
+    ],
+    "corner_style": [
+      "sharp", "rounded", "beveled", "chamfered"
+    ],
+    "embellishment": [
+      "sparkle", "glow", "drop shadow", "inner shadow", "long shadow", "gradient overlay", "highlight", "emboss", "outline", "stroke double", "noise texture"
+    ]
+  }
+}
