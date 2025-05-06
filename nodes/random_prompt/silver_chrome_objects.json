@@ -2,33 +2,45 @@
   "modes": {
     "SILVER_OBJECT_FOCUS": [
       "A gleaming {silver_object} with reflective {finish} surface, placed in {location}, {lighting}, {photography_details}.",
-      "Close-up of a polished {silver_object}, capturing detailed reflections, {location} visible in the background, {photography_details}.",
+      "Close-up of a polished {unusual_silver_object} made entirely of {metallic_material}, capturing detailed reflections, {location} visible in the background, {photography_details}.",
       "Highly detailed {silver_object} made of {metallic_material}, {lighting}, positioned carefully in {location}, {photography_details}.",
-      "Macro photography of a {silver_object}'s surface texture, showing the {finish} finish in {lighting}, {photography_details}."
+      "Macro photography of a metallic {unusual_silver_object}'s {finish} surface texture, showing intricate details in {lighting}, {photography_details}."
     ],
     "CHROME_IN_ENVIRONMENT": [
-      "A chrome {silver_object} contrasting against the organic textures of {location}, {time_of_day}, {photography_details}.",
+      "A chrome {unusual_silver_object} contrasting against the organic textures of {location}, {time_of_day}, {photography_details}.",
       "Environmental portrait: {silver_object} with mirror-like surface reflecting the surrounding {location}, {photography_details}.",
-      "Wide angle shot of {location} featuring a prominent {silver_object} as focal point, {weather_condition}, {photography_details}.",
+      "Wide angle shot of {location} featuring a prominent chrome {unusual_silver_object} as focal point, {weather_condition}, {photography_details}.",
       "The metallic sheen of a {silver_object} creates a striking focal point in {location}, {lighting}, {photography_details}."
     ],
     "ARTISTIC_METALLIC": [
-      "Abstract composition featuring the curves and reflections of a {silver_object}, {artistic_style}, set in {location}, {photography_details}.",
+      "Abstract composition featuring the curves and reflections of a {unusual_silver_object} rendered in {metallic_material}, {artistic_style}, set in {location}, {photography_details}.",
       "Surreal scene: multiple {silver_object}s arranged in impossible formations, {metallic_material} finish, {location}, {photography_details}.",
-      "Fine art photograph of {silver_object} with dramatic {lighting}, minimal composition, {location} setting, {photography_details}.",
+      "Fine art photograph of {unusual_silver_object} crafted entirely from {metallic_material} with dramatic {lighting}, minimal composition, {location} setting, {photography_details}.",
       "{artistic_style} rendering of a {silver_object}, emphasizing the interplay of light on its {metallic_material} surface, {photography_details}."
     ],
     "FUNCTIONAL_METALLIC": [
-      "A utilitarian {silver_object} showing signs of regular use, {patina} visible on its {metallic_material} surface, {location}, {photography_details}.",
+      "A utilitarian {unusual_silver_object} made of {metallic_material}, showing signs of regular use, {patina} visible on its surface, {location}, {photography_details}.",
       "Working environment featuring a well-maintained {silver_object}, essential in {location}, {lighting}, {photography_details}.",
-      "Industrial setting: close examination of a functional {silver_object}, highlighting engineering details, {location}, {photography_details}.",
+      "Industrial setting: close examination of a functional {unusual_silver_object} crafted from {metallic_material}, highlighting engineering details, {location}, {photography_details}.",
       "Documentary-style image of a {silver_object} being used in its intended purpose, {location}, {time_of_day}, {photography_details}."
     ],
     "JUXTAPOSITION_CHROME": [
-      "Unexpected placement: a futuristic chrome {silver_object} amid the rustic setting of {location}, {weather_condition}, {photography_details}.",
+      "Unexpected placement: a futuristic chrome {unusual_silver_object} amid the rustic setting of {location}, {weather_condition}, {photography_details}.",
       "Contrasting materials: organic {location} elements surrounding a perfectly polished {silver_object}, {lighting}, {photography_details}.",
-      "Time contrast: ancient {location} featuring a modern {silver_object} with {finish} finish, {time_of_day}, {photography_details}.",
+      "Time contrast: ancient {location} featuring a modern {unusual_silver_object} with {finish} {metallic_material} finish, {time_of_day}, {photography_details}.",
       "Scale juxtaposition: tiny {silver_object} against the vastness of {location}, metallic surface catching {lighting}, {photography_details}."
+    ],
+    "UNUSUAL_SILVER_TRANSFORMATION": [
+      "Surreal transformation: a {unusual_silver_object} completely rendered in {metallic_material} with {finish} finish, placed in {location}, {photography_details}.",
+      "Material experiment: an ordinary {unusual_silver_object} reimagined entirely in polished {metallic_material}, reflecting {lighting} in {location}, {photography_details}.",
+      "Conceptual art piece: {unusual_silver_object} cast in solid {metallic_material}, its familiar form made alien by the metallic transformation, {location}, {photography_details}.",
+      "Hyperrealistic rendering of {unusual_silver_object} as if expertly crafted from {metallic_material}, every detail preserved but materiality transformed, {photography_details}."
+    ],
+    "MATERIAL_COMPARISON": [
+      "Side-by-side comparison: a traditional {silver_object} next to a {unusual_silver_object} both crafted from identical {metallic_material} with {finish} finish, {location}, {photography_details}.",
+      "Material study: the natural texture of a {unusual_silver_object} contrasted with the manufactured form of a {silver_object}, both rendered in {metallic_material}, {lighting}, {photography_details}.",
+      "Sculptural installation featuring both a conventional {silver_object} and an unexpected {unusual_silver_object} cast in {metallic_material}, displayed in {location}, {photography_details}.",
+      "Conceptual pairing: a {silver_object} and a {unusual_silver_object} sharing identical {metallic_material} treatment, arranged as a still life, {lighting} highlighting their different forms, {photography_details}."
     ]
   },
   "categories": {
@@ -40,6 +52,15 @@
       "sculpture", "dental tools", "mechanical pencil", "doorknob", "chain links",
       "telescope", "bullet", "silver dollar", "wedding ring", "flute", "spoon", "jewelry box",
       "whistle", "letter opener", "hood ornament", "robot arm", "silver chalice"
+    ],
+    "unusual_silver_object": [
+      "banana", "rose", "book", "apple", "teddy bear", "origami crane", "feather", "leaf", 
+      "seashell", "slice of bread", "strawberry", "human hand", "cactus", "pine cone", 
+      "butterfly", "leather jacket", "newspaper", "wooden chair", "pineapple", "watermelon", 
+      "brick", "playing card", "cotton ball", "chocolate bar", "water droplet", "sand dune", 
+      "palm tree", "marshmallow", "bird's nest", "lemon", "sliced orange", "hamburger", 
+      "pair of jeans", "sleeping cat", "pine tree", "human face", "ice cream cone", 
+      "cloud", "candle flame", "balloon"
     ],
     "metallic_material": [
       "sterling silver", "polished chrome", "brushed aluminum", "stainless steel", "nickel", 
