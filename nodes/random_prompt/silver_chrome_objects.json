@@ -1,0 +1,96 @@
+{
+  "modes": {
+    "SILVER_OBJECT_FOCUS": [
+      "A gleaming {silver_object} with reflective {finish} surface, placed in {location}, {lighting}.",
+      "Close-up of a polished {silver_object}, capturing detailed reflections, {location} visible in the background.",
+      "Highly detailed {silver_object} made of {metallic_material}, {lighting}, positioned carefully in {location}.",
+      "Macro photography of a {silver_object}'s surface texture, showing the {finish} finish in {lighting}."
+    ],
+    "CHROME_IN_ENVIRONMENT": [
+      "A chrome {silver_object} contrasting against the organic textures of {location}, {time_of_day}.",
+      "Environmental portrait: {silver_object} with mirror-like surface reflecting the surrounding {location}.",
+      "Wide angle shot of {location} featuring a prominent {silver_object} as focal point, {weather_condition}.",
+      "The metallic sheen of a {silver_object} creates a striking focal point in {location}, {lighting}."
+    ],
+    "ARTISTIC_METALLIC": [
+      "Abstract composition featuring the curves and reflections of a {silver_object}, {artistic_style}, set in {location}.",
+      "Surreal scene: multiple {silver_object}s arranged in impossible formations, {metallic_material} finish, {location}.",
+      "Fine art photograph of {silver_object} with dramatic {lighting}, minimal composition, {location} setting.",
+      "{artistic_style} rendering of a {silver_object}, emphasizing the interplay of light on its {metallic_material} surface."
+    ],
+    "FUNCTIONAL_METALLIC": [
+      "A utilitarian {silver_object} showing signs of regular use, {patina} visible on its {metallic_material} surface, {location}.",
+      "Working environment featuring a well-maintained {silver_object}, essential in {location}, {lighting}.",
+      "Industrial setting: close examination of a functional {silver_object}, highlighting engineering details, {location}.",
+      "Documentary-style image of a {silver_object} being used in its intended purpose, {location}, {time_of_day}."
+    ],
+    "JUXTAPOSITION_CHROME": [
+      "Unexpected placement: a futuristic chrome {silver_object} amid the rustic setting of {location}, {weather_condition}.",
+      "Contrasting materials: organic {location} elements surrounding a perfectly polished {silver_object}, {lighting}.",
+      "Time contrast: ancient {location} featuring a modern {silver_object} with {finish} finish, {time_of_day}.",
+      "Scale juxtaposition: tiny {silver_object} against the vastness of {location}, metallic surface catching {lighting}."
+    ]
+  },
+  "categories": {
+    "silver_object": [
+      "teapot", "pocket watch", "surgical scissors", "candlestick", "trumpet", "chess piece", 
+      "serving tray", "fountain pen", "hip flask", "table bell", "luxury wristwatch", "ceremonial dagger", 
+      "retro microphone", "harmonica", "cocktail shaker", "vintage camera", "thimble", "compass", 
+      "sterling silver fork", "antique key", "luxury cigarette case", "mirror", "mechanical cog", 
+      "sculpture", "dental tools", "mechanical pencil", "doorknob", "chain links",
+      "telescope", "bullet", "silver dollar", "wedding ring", "flute", "spoon", "jewelry box",
+      "whistle", "letter opener", "hood ornament", "robot arm", "silver chalice"
+    ],
+    "metallic_material": [
+      "sterling silver", "polished chrome", "brushed aluminum", "stainless steel", "nickel", 
+      "platinum", "white gold", "titanium", "mercury (liquid)", "polished steel", "pewter", 
+      "rhodium", "surgical steel", "silver plate", "mirror-finished metal", "galvanized steel", 
+      "anodized aluminum", "quicksilver", "chromed brass", "silver leaf"
+    ],
+    "finish": [
+      "mirror-polished", "satin", "brushed", "hammered", "engraved", "etched", "filigree", 
+      "embossed", "diamond-cut", "high-polish", "matte", "textured", "machine-turned", 
+      "engine-turned", "guillochéd", "repoussé", "chased", "burnished", "antique", "sandblasted"
+    ],
+    "patina": [
+      "tarnish", "verdigris", "oxidation", "rust spots", "wear patterns", "fine scratches", 
+      "fingerprints", "water spots", "factory patina", "age darkening", "heat coloration", 
+      "artificial aging", "blackened details", "polished highlights", "dents", "scuff marks", 
+      "tool marks", "pitting", "corrosion", "intentional weathering"
+    ],
+    "location": [
+      "luxury penthouse", "antique shop", "surgical theater", "jewelry workshop", "museum display case", 
+      "fine dining restaurant", "symphony orchestra pit", "chemistry laboratory", "industrial factory", 
+      "watchmaker's bench", "art deco bar", "aristocratic library", "abandoned mansion", "spacecraft interior", 
+      "clocktower mechanism", "desert landscape", "medieval banquet hall", "modern minimalist apartment", 
+      "Victorian parlor", "foggy London street", "high-end retail store", "traditional tea ceremony", 
+      "machine shop", "underwater shipwreck", "artist's studio", "royal treasury", "corporate boardroom", 
+      "gothic cathedral", "scientific observatory", "winter forest", "mountaintop", "beach at sunset", 
+      "mid-century modern home", "space station", "vintage automobile interior", "luxury yacht", 
+      "professional kitchen", "historic train station", "botanical garden", "ceremonial temple"
+    ],
+    "lighting": [
+      "dramatic spotlight", "diffused daylight", "candlelight", "golden hour sunlight", "blue hour twilight", 
+      "neon accent lights", "surgical bright white", "moody low-key", "high-key studio", "harsh direct sun", 
+      "filtered through curtains", "cloudy day even light", "dramatic side lighting", "backlit silhouette", 
+      "ring light", "soft box", "LED color wash", "firelight", "moonlight", "museum gallery spotlights"
+    ],
+    "time_of_day": [
+      "dawn", "early morning", "mid-morning", "noon", "early afternoon", "late afternoon", 
+      "golden hour", "sunset", "dusk", "blue hour", "early evening", "midnight", "witching hour", 
+      "first light", "last light", "high noon", "twilight", "after dark", "pre-dawn", "brunch time"
+    ],
+    "weather_condition": [
+      "clear skies", "gentle rain", "heavy downpour", "light snow", "blizzard", "foggy mist", 
+      "hazy sunshine", "overcast", "stormy", "partly cloudy", "windy", "humid", "dry heat", 
+      "frost", "ice storm", "thunder and lightning", "rainbow present", "dust storm", 
+      "heavy marine layer", "atmospheric haze"
+    ],
+    "artistic_style": [
+      "minimalist", "baroque", "art deco", "steampunk", "cyberpunk", "noir", "high fashion", 
+      "product photography", "documentary", "abstract", "surrealist", "hyperrealist", 
+      "low poly digital", "cinematic", "vaporwave", "brutalist", "impressionist", 
+      "technical illustration", "vintage advertisement", "editorial"
+    ]
+  }
+} 
