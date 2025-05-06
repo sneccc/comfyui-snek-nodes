@@ -1,34 +1,34 @@
 {
   "modes": {
     "SILVER_OBJECT_FOCUS": [
-      "A gleaming {silver_object} with reflective {finish} surface, placed in {location}, {lighting}.",
-      "Close-up of a polished {silver_object}, capturing detailed reflections, {location} visible in the background.",
-      "Highly detailed {silver_object} made of {metallic_material}, {lighting}, positioned carefully in {location}.",
-      "Macro photography of a {silver_object}'s surface texture, showing the {finish} finish in {lighting}."
+      "A gleaming {silver_object} with reflective {finish} surface, placed in {location}, {lighting}, {photography_details}.",
+      "Close-up of a polished {silver_object}, capturing detailed reflections, {location} visible in the background, {photography_details}.",
+      "Highly detailed {silver_object} made of {metallic_material}, {lighting}, positioned carefully in {location}, {photography_details}.",
+      "Macro photography of a {silver_object}'s surface texture, showing the {finish} finish in {lighting}, {photography_details}."
     ],
     "CHROME_IN_ENVIRONMENT": [
-      "A chrome {silver_object} contrasting against the organic textures of {location}, {time_of_day}.",
-      "Environmental portrait: {silver_object} with mirror-like surface reflecting the surrounding {location}.",
-      "Wide angle shot of {location} featuring a prominent {silver_object} as focal point, {weather_condition}.",
-      "The metallic sheen of a {silver_object} creates a striking focal point in {location}, {lighting}."
+      "A chrome {silver_object} contrasting against the organic textures of {location}, {time_of_day}, {photography_details}.",
+      "Environmental portrait: {silver_object} with mirror-like surface reflecting the surrounding {location}, {photography_details}.",
+      "Wide angle shot of {location} featuring a prominent {silver_object} as focal point, {weather_condition}, {photography_details}.",
+      "The metallic sheen of a {silver_object} creates a striking focal point in {location}, {lighting}, {photography_details}."
     ],
     "ARTISTIC_METALLIC": [
-      "Abstract composition featuring the curves and reflections of a {silver_object}, {artistic_style}, set in {location}.",
-      "Surreal scene: multiple {silver_object}s arranged in impossible formations, {metallic_material} finish, {location}.",
-      "Fine art photograph of {silver_object} with dramatic {lighting}, minimal composition, {location} setting.",
-      "{artistic_style} rendering of a {silver_object}, emphasizing the interplay of light on its {metallic_material} surface."
+      "Abstract composition featuring the curves and reflections of a {silver_object}, {artistic_style}, set in {location}, {photography_details}.",
+      "Surreal scene: multiple {silver_object}s arranged in impossible formations, {metallic_material} finish, {location}, {photography_details}.",
+      "Fine art photograph of {silver_object} with dramatic {lighting}, minimal composition, {location} setting, {photography_details}.",
+      "{artistic_style} rendering of a {silver_object}, emphasizing the interplay of light on its {metallic_material} surface, {photography_details}."
     ],
     "FUNCTIONAL_METALLIC": [
-      "A utilitarian {silver_object} showing signs of regular use, {patina} visible on its {metallic_material} surface, {location}.",
-      "Working environment featuring a well-maintained {silver_object}, essential in {location}, {lighting}.",
-      "Industrial setting: close examination of a functional {silver_object}, highlighting engineering details, {location}.",
-      "Documentary-style image of a {silver_object} being used in its intended purpose, {location}, {time_of_day}."
+      "A utilitarian {silver_object} showing signs of regular use, {patina} visible on its {metallic_material} surface, {location}, {photography_details}.",
+      "Working environment featuring a well-maintained {silver_object}, essential in {location}, {lighting}, {photography_details}.",
+      "Industrial setting: close examination of a functional {silver_object}, highlighting engineering details, {location}, {photography_details}.",
+      "Documentary-style image of a {silver_object} being used in its intended purpose, {location}, {time_of_day}, {photography_details}."
     ],
     "JUXTAPOSITION_CHROME": [
-      "Unexpected placement: a futuristic chrome {silver_object} amid the rustic setting of {location}, {weather_condition}.",
-      "Contrasting materials: organic {location} elements surrounding a perfectly polished {silver_object}, {lighting}.",
-      "Time contrast: ancient {location} featuring a modern {silver_object} with {finish} finish, {time_of_day}.",
-      "Scale juxtaposition: tiny {silver_object} against the vastness of {location}, metallic surface catching {lighting}."
+      "Unexpected placement: a futuristic chrome {silver_object} amid the rustic setting of {location}, {weather_condition}, {photography_details}.",
+      "Contrasting materials: organic {location} elements surrounding a perfectly polished {silver_object}, {lighting}, {photography_details}.",
+      "Time contrast: ancient {location} featuring a modern {silver_object} with {finish} finish, {time_of_day}, {photography_details}.",
+      "Scale juxtaposition: tiny {silver_object} against the vastness of {location}, metallic surface catching {lighting}, {photography_details}."
     ]
   },
   "categories": {
@@ -91,6 +91,38 @@
       "product photography", "documentary", "abstract", "surrealist", "hyperrealist", 
       "low poly digital", "cinematic", "vaporwave", "brutalist", "impressionist", 
       "technical illustration", "vintage advertisement", "editorial"
+    ],
+    "photography_details": [
+      "shot on Hasselblad medium format", 
+      "captured with a Leica M10 and 50mm f/1.4 Summilux lens", 
+      "photographed using Phase One digital back", 
+      "taken with a Sony Alpha camera, extremely sharp details", 
+      "shot with a Canon 5D, 85mm portrait lens at f/1.2", 
+      "captured on 4×5 large format film", 
+      "taken with a tilt-shift lens for selective focus", 
+      "photographed on Kodak Portra 400 film", 
+      "shot on Fujifilm Velvia for rich color saturation", 
+      "using HDR technique to capture full dynamic range", 
+      "captured at f/16 for maximum depth of field", 
+      "8K Ultra HD photograph with incredible resolution", 
+      "RAW image with professional color grading", 
+      "published in National Geographic magazine", 
+      "in the style of famous product photographer Tim Tadder", 
+      "reminiscent of Annie Leibovitz's studio work", 
+      "using Peter Lindbergh's black and white technique", 
+      "with Richard Avedon's clean backdrop aesthetic", 
+      "professional product photography with polarizing filter", 
+      "using focus stacking technique for perfect clarity",
+      "with extreme shallow depth of field (f/1.4)",
+      "shot at ISO 100 for minimal noise",
+      "using a 100mm macro lens for fine details",
+      "employing axial lighting to minimize reflections",
+      "utilizing a 5-light studio setup",
+      "captured with a slow shutter speed for dramatic effect",
+      "using cross-polarization technique to control reflections",
+      "part of an advertising campaign for a luxury brand",
+      "studio product shot with seamless white background",
+      "underwater photography with specialized lighting"
     ]
   }
 } 
