@@ -32,13 +32,13 @@
     ],
 
     "GUMMY_SQUIRCLE": [
-      "App‑style icon: a {subject} as a glossy ‘gummy’ 3‑D object centred on a soft‑shadow {background_shape} squircle, glassy highlight top‑left, deep ambient occlusion bottom‑right.",
+      "App‑style icon: a {subject} as a glossy 'gummy' 3‑D object centred on a soft‑shadow {background_shape} squircle, glassy highlight top‑left, deep ambient occlusion bottom‑right.",
       "Pillowy 3‑D glyph of {subject}; puffy plastic look, vibrant {primary_color} to {secondary_color} radial gradient, subtle inner shadow, floating over a blurred backdrop.",
       "High‑resolution 1024×1024 icon, rounded square canvas; soft‑extruded {subject} with translucent edges and specular sparkle, background basked in {lighting}."
     ],
     "GLASSMORPH_CARD": [
       "Sleek glass‑morph tile: frosted {background_shape} card, backdrop blur, inner glow; minimalist {subject} line‑icon etched in white with {stroke_weight} weight.",
-      "Semi‑transparent glass pane icon—{subject} glyph centred, white outline, rainbow refraction edges, grainy noise texture at 8 % opacity.",
+      "Semi‑transparent glass pane icon—{subject} glyph centred, white outline, rainbow refraction edges, grainy noise texture at 8 % opacity.",
       "Floating translucent card displaying {subject}; cool‑tone {primary_color} to {secondary_color} linear gradient behind, bright rim‑light, subtle drop shadow."
     ],
     "NEON_RIM_LIGHT": [
@@ -54,16 +54,41 @@
     "PUFFY_PIXEL": [
       "Hybrid puffy‑pixel: blocky 16‑bit style {subject} but with soft depth, vibrant palette ({primary_color}, {secondary_color}, {accent_color}), tiny ambient shadow.",
       "Isometric voxel icon of {subject}; bevelled cubes, candy gloss highlights, floating on transparent canvas.",
-      "Retro‑cute sprite—{subject} built on 32×32 grid, dithered shading, extra highlight pass for modern ‘gummy’ sheen."
+      "Retro‑cute sprite—{subject} built on 32×32 grid, dithered shading, extra highlight pass for modern 'gummy' sheen."
+    ],
+    "NEUMORPHISM": [
+      "Neumorphic icon of a {subject} with subtle extrusion, soft shadows and highlights, {primary_color} base on matching background, {resolution} resolution.",
+      "Soft UI {subject} icon; extruded from background with delicate shadows, monochromatic {primary_color} palette, rounded {corner_style} corners.",
+      "Modern neumorphic design: {subject} embossed subtly on {primary_color} surface, light {lighting}, {composition} composition, aligned to {icon_grid}."
+    ],
+    "CLAY_3D": [
+      "Clay-style 3D {subject} icon with rounded organic forms, matte {finish} surface, {primary_color} base with {secondary_color} highlights, {detail_level} details.",
+      "Playful claymorphism: {subject} sculpted as soft rounded 3D object, {primary_color}/{secondary_color} scheme, following {style_influence} design language.",
+      "3D clay render of {subject} with pillowy soft edges, subtle {gradient_direction} gradient, {theme_mood} aesthetic, optimized for {platform_context}."
+    ],
+    "DUOTONE": [
+      "Bold duotone icon of {subject} using only {primary_color} and {secondary_color}, overlapping transparent layers creating depth, {background_shape} frame.",
+      "Modern two-color {subject} overlay effect; solid shapes in {primary_color} and {secondary_color}, {background_pattern} texture subtly visible.",
+      "Striking duotone {subject} with halftone shadow effect, flat {primary_color} and {secondary_color} palette, {icon_perspective} view, {negative_space} usage."
+    ],
+    "WIREFRAME": [
+      "Technical wireframe icon depicting a {subject} with precise {stroke_weight} lines, orthographic view, grid-aligned to {icon_grid}, {primary_color} on {secondary_color}.",
+      "Blueprint-style {subject} icon with thin {primary_color} linework, subtle grid marks, dimensions indicated, {aspect_ratio} aspect ratio.",
+      "Engineering diagram of {subject}, wireframe rendering with {corner_style} junctions, {background_pattern} backdrop, suitable for {app_category} applications."
+    ],
+    "RETROFUTURISM": [
+      "Retrofuturistic {subject} icon combining 80s aesthetics with modern execution, chrome {material} details, {primary_color} neon accents, {background_pattern} backdrop.",
+      "Retro-tech {subject} with chrome bevels, scanlines, subtle {gradient_direction} gradient ({primary_color} to {secondary_color}), {theme_mood} mood.",
+      "Synthwave-inspired {subject} icon, {primary_color}/{secondary_color}/{accent_color} palette, sunburst grid background, {detail_level} detailing, {resolution} size."
     ]
   },
 
   "categories": {
     "subject": [
-      "arrow", "bell", "bookmark", "calendar", "camera", "cart", "chat bubble", "check mark", "clock", "cloud", "code bracket", "compass", "credit card", "database", "document", "download", "envelope", "eye", "file folder", "flag", "flashlight", "floppy disk", "gear", "gift box", "globe", "heart", "home", "image", "key", "lamp", "leaf", "link", "lock", "location pin", "map", "microphone", "music note", "paint brush", "paperclip", "phone", "pie chart", "play button", "printer", "rocket", "search", "settings sliders", "share", "shield", "shopping bag", "star", "sun", "tag", "ticket", "trash can", "trophy", "upload", "user", "video camera", "wifi", "wallet", "battery", "bug", "bulb", "car", "cat", "dog", "dollar sign", "earth", "fire", "flower", "folder open", "graduation cap", "hammer", "headphones", "house plant", "ice cream", "joystick", "leafy branch", "magnet", "megaphone", "moon", "mountain", "news", "page break", "palette", "paper plane", "pencil", "presentation", "question mark", "rain drop", "robot", "scroll", "server rack", "shopping cart", "smartphone", "speech bubble", "stack", "stopwatch", "sword", "target", "thermometer", "toolbox", "traffic cone", "truck", "umbrella", "vector curve", "video play", "virus", "volume", "warning triangle", "wrench", "zap"
+      "arrow", "bell", "bookmark", "calendar", "camera", "cart", "chat bubble", "check mark", "clock", "cloud", "code bracket", "compass", "credit card", "database", "document", "download", "envelope", "eye", "file folder", "flag", "flashlight", "floppy disk", "gear", "gift box", "globe", "heart", "home", "image", "key", "lamp", "leaf", "link", "lock", "location pin", "map", "microphone", "music note", "paint brush", "paperclip", "phone", "pie chart", "play button", "printer", "rocket", "search", "settings sliders", "share", "shield", "shopping bag", "star", "sun", "tag", "ticket", "trash can", "trophy", "upload", "user", "video camera", "wifi", "wallet", "battery", "bug", "bulb", "car", "cat", "dog", "dollar sign", "earth", "fire", "flower", "folder open", "graduation cap", "hammer", "headphones", "house plant", "ice cream", "joystick", "leafy branch", "magnet", "megaphone", "moon", "mountain", "news", "page break", "palette", "paper plane", "pencil", "presentation", "question mark", "rain drop", "robot", "scroll", "server rack", "shopping cart", "smartphone", "speech bubble", "stack", "stopwatch", "sword", "target", "thermometer", "toolbox", "traffic cone", "truck", "umbrella", "vector curve", "video play", "virus", "volume", "warning triangle", "wrench", "zap", "blockchain", "VR headset", "AI chip", "drone", "smart watch", "fingerprint", "cryptocurrency", "gesture", "face ID", "notification", "biometric", "augmented reality", "quantum computing", "neural network", "smart home", "encryption", "streaming", "podcast", "dashboard", "authentication", "wireless charging"
     ],
     "background_shape": [
-      "circle", "square", "rounded square", "squircle", "hexagon", "octagon", "shield", "badge", "tear‑drop", "diamond", "ellipse", "starburst", "heart‑shape", "gear outline", "cloud silhouette"
+      "circle", "square", "rounded square", "squircle", "hexagon", "octagon", "shield", "badge", "tear‑drop", "diamond", "ellipse", "starburst", "heart‑shape", "gear outline", "cloud silhouette", "pill shape", "triangle", "blob", "rectangle", "parallelogram", "continuous wave", "custom cutout"
     ],
     "primary_color": [
       "Azure", "Cerise", "Coral", "Crimson", "Emerald", "Fuchsia", "Gold", "Indigo", "Lavender", "Lime", "Magenta", "Mint", "Orange", "Periwinkle", "Pink", "Purple", "Ruby", "Sapphire", "Sky blue", "Teal", "Turquoise", "Violet", "Yellow"
@@ -78,25 +103,61 @@
       "hairline", "thin", "light", "regular", "medium", "bold", "extra‑bold"
     ],
     "finish": [
-      "matte", "glossy", "brushed metal", "frosted glass", "plastic", "rubberized", "ceramic", "leather", "wooden"
+      "matte", "glossy", "brushed metal", "frosted glass", "plastic", "rubberized", "ceramic", "leather", "wooden", "holographic", "iridescent", "pearlescent", "liquid metal", "velvet", "candy shell", "chrome", "satin"
     ],
     "material": [
-      "glass", "polished steel", "chromed metal", "aluminium", "brass", "copper", "rose gold", "carbon fibre", "porcelain", "granite", "marble", "acrylic", "ice", "crystal", "paper", "fabric", "stone"
+      "glass", "polished steel", "chromed metal", "aluminium", "brass", "copper", "rose gold", "carbon fibre", "porcelain", "granite", "marble", "acrylic", "ice", "crystal", "paper", "fabric", "stone", "titanium", "neon tubes", "silicone", "clay", "hologram", "liquid metal", "candy glaze", "plastic composite"
     ],
     "gradient_direction": [
-      "top‑to‑bottom", "bottom‑to‑top", "left‑to‑right", "right‑to‑left", "diagonal tl‑br", "diagonal bl‑tr", "radial", "angular"
+      "top‑to‑bottom", "bottom‑to‑top", "left‑to‑right", "right‑to‑left", "diagonal tl‑br", "diagonal bl‑tr", "radial", "angular", "concentric", "spiral", "mesh"
     ],
     "lighting": [
-      "soft studio light", "dramatic rim light", "top‑left key light", "backlit glow", "neon edge light", "ambient occlusion"
+      "soft studio light", "dramatic rim light", "top‑left key light", "backlit glow", "neon edge light", "ambient occlusion", "volumetric light", "HDR environment", "global illumination", "subsurface scattering", "god rays", "spot lighting", "cinematic lighting"
     ],
     "icon_grid": [
-      "24‑pixel", "32‑pixel", "64‑pixel", "8‑pt keyline", "isometric 30°"
+      "24‑pixel", "32‑pixel", "64‑pixel", "8‑pt keyline", "isometric 30°", "material design grid", "iOS grid system", "adaptive grid", "golden ratio"
     ],
     "corner_style": [
-      "sharp", "rounded", "beveled", "chamfered"
+      "sharp", "rounded", "beveled", "chamfered", "double-rounded", "notched", "inverted", "scalloped", "concave"
     ],
     "embellishment": [
-      "sparkle", "glow", "drop shadow", "inner shadow", "long shadow", "gradient overlay", "highlight", "emboss", "outline", "stroke double", "noise texture"
+      "sparkle", "glow", "drop shadow", "inner shadow", "long shadow", "gradient overlay", "highlight", "emboss", "outline", "stroke double", "noise texture", "halftone", "dot pattern", "line texture", "subtle reflection", "grain overlay", "bloom effect", "rim highlight"
+    ],
+    "app_category": [
+      "finance", "social media", "productivity", "gaming", "education", "health", "fitness", "travel", "lifestyle", "music", "entertainment", "shopping", "photography", "news", "weather", "messaging", "food delivery", "dating", "navigation", "utilities"
+    ],
+    "platform_context": [
+      "iOS", "Android", "macOS", "Windows", "web app", "watchOS", "tvOS", "cross-platform", "PWA", "desktop app", "mobile app", "tablet app"
+    ],
+    "background_pattern": [
+      "dots", "grid", "lines", "waves", "chevron", "honeycomb", "crosshatch", "halftone", "checkerboard", "stripes", "triangles", "topographic", "noise", "blueprint", "gradient mesh" 
+    ],
+    "composition": [
+      "centered", "off-center", "layered", "grouped", "asymmetrical", "radial", "stacked", "nested", "floating", "overlapping", "separated", "integrated", "framed"
+    ],
+    "icon_perspective": [
+      "front-facing", "angled", "isometric", "bird's eye", "side view", "perspective", "flat", "three-quarter", "tilted", "top-down"
+    ],
+    "negative_space": [
+      "minimal", "prominent", "cleverly integrated", "symbolic", "text-forming", "secondary image", "background feature", "none", "balanced"
+    ],
+    "resolution": [
+      "16×16", "32×32", "64×64", "128×128", "256×256", "512×512", "1024×1024", "adaptive"
+    ],
+    "aspect_ratio": [
+      "1:1 square", "circle", "16:9 rectangle", "4:3 rectangle", "2:3 portrait", "3:2 landscape", "adaptive", "custom"
+    ],
+    "detail_level": [
+      "minimal", "moderate", "intricate", "ultra-detailed", "simplified", "balanced", "high-fidelity", "lo-fi"
+    ],
+    "style_influence": [
+      "Apple Human Interface", "Google Material Design", "Microsoft Fluent", "Flat 2.0", "Skeuomorphic", "Brutalist", "Minimalist", "Bauhaus", "Nordic", "Swiss", "Memphis"
+    ],
+    "theme_mood": [
+      "playful", "serious", "futuristic", "retro", "elegant", "energetic", "calm", "corporate", "organic", "technical", "whimsical", "sophisticated"
+    ],
+    "color_scheme": [
+      "monochromatic", "complementary", "analogous", "triadic", "split-complementary", "tetradic", "neutral with accent", "high contrast", "pastel", "neon", "earth tones", "metallic"
     ]
   }
 }
