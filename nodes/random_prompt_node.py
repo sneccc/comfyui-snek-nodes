@@ -158,12 +158,21 @@ class RandomPromptFromJson:
         if "all" not in initial_modes:
             initial_modes.insert(0, "all")
 
+        # --- Build a union list of all modes across every JSON file ---
+        #  This ensures the backend validation accepts any mode that exists in any file,
+        #  avoiding "Value not in list" errors when a user switches the selected JSON file.
+        all_modes_set = set(["all"])
+        for cached in JSON_DATA_CACHE.values():
+            all_modes_set.update(cached.get("modes", []))
+
+        # Keep "all" first, then alphabetically sort the remaining modes for readability
+        all_modes = ["all"] + sorted([m for m in all_modes_set if m != "all"])
 
         return {
             "required": {
                 "json_file": (cls.json_files, ), # Dropdown list
-                # Initialize mode with modes from first file, JS will take over
-                "mode": (initial_modes, {"default": "all"}),
+                # Use the comprehensive mode list so any valid mode passes backend validation
+                "mode": (all_modes, {"default": "all"}),
                 "seed": ("INT", {"default": 0, "min": 0, "max": 0xffffffffffffffff}),
             },
         }
