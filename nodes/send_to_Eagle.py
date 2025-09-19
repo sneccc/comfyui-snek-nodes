@@ -15,18 +15,27 @@ from PIL.PngImagePlugin import PngInfo
 
 class EagleAPI:
     def __init__(self, base_url="http://localhost:41595", token=None):
-        # Remove any existing token from base_url
-        if "?token=" in base_url:
-            parts = base_url.split("?token=")
-            self.base_url = parts[0]
-            self.token = parts[1]
-        elif "&token=" in base_url:
-            parts = base_url.split("&token=")
-            self.base_url = parts[0]
-            self.token = parts[1]
-        else:
-            self.base_url = base_url
-            self.token = token
+        # Prioritize token from the dedicated field, but allow it to be in the URL
+        
+        parsed_token = None
+        cleaned_url = base_url
+
+        if base_url and "?token=" in base_url:
+            parts = base_url.split("?token=", 1)
+            cleaned_url = parts[0]
+            if len(parts) > 1 and parts[1]:
+                # Handle cases where other params might exist
+                token_part = parts[1].split('&')[0]
+                parsed_token = token_part
+        elif base_url and "&token=" in base_url:
+            parts = base_url.split("&token=", 1)
+            cleaned_url = parts[0]
+            if len(parts) > 1 and parts[1]:
+                token_part = parts[1].split('&')[0]
+                parsed_token = token_part
+
+        self.base_url = cleaned_url
+        self.token = token if token and token.strip() else parsed_token
 
         # Headers based on Eagle API documentation
         self.headers = {
@@ -168,6 +177,7 @@ class Send_to_Eagle:
         return {
             "required": {
                 "folder_name": ("STRING", {"default": "Folder Name on Eagle"}),
+                "image_name_prefix": ("STRING", {"default": "Comfy"}),
                 "description": ("STRING", {"default": "Your description here"}),
                 "tags": ("STRING", {"default": ""}),
                 "eagle_api_url": ("STRING", {"default": "http://localhost:41595"}),
@@ -200,13 +210,16 @@ class Send_to_Eagle:
         except Exception as e:
             raise Exception(f"Error connecting to Eagle API at {eagle_api_url}: {str(e)}")
 
-    def main(self, folder_name: str, description: str, eagle_api_url: str, eagle_token: str,
+    def main(self, folder_name: str, image_name_prefix: str, description: str, eagle_api_url: str, eagle_token: str,
              images: torch.Tensor = None, image_url: str = "", 
              use_direct_upload: bool = True, tags: str = None, 
              prompt: dict = None, extra_pnginfo: dict = None):
         log = []
         
         try:
+            if not eagle_api_url or not eagle_api_url.strip():
+                raise ValueError("Eagle API URL is not provided. Please enter the URL for your Eagle instance (e.g., http://localhost:41595).")
+
             log.append(f"Connecting to Eagle API at: {eagle_api_url}")
             print(f"\nAttempting to connect to Eagle API at: {eagle_api_url}")
             print(f"Using token: {eagle_token[:8]}...{eagle_token[-8:] if eagle_token else 'None'}")
@@ -239,7 +252,7 @@ class Send_to_Eagle:
                     
                     data = {
                         "url": image_url,
-                        "name": "Comfy_URL",
+                        "name": image_name_prefix,
                         "folderId": folder_id,
                         "annotation": description,
                     }
@@ -279,7 +292,7 @@ class Send_to_Eagle:
 
                         item = {
                             "path": output_file,
-                            "name": f"Comfy_{idx}",
+                            "name": f"{image_name_prefix}_{idx}",
                             "annotation": description,
                             "tags": tags_array
                         }

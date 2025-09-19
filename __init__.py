@@ -9,6 +9,7 @@ from .nodes.experimental import NODE_CLASS_MAPPINGS as Experimental_MAPPING
 # import .nodes.random_prompt_node  <-- REMOVED
 # --- Then import its mappings ---
 from .nodes.random_prompt_node import NODE_CLASS_MAPPINGS as RandomPrompt_MAPPING
+from .nodes.sqlite import NODE_CLASS_MAPPINGS as SQLite_MAPPING
 
 # --- IMPORTANT: Define the directory for JS files ---
 # This tells ComfyUI where to find your JavaScript file(s)
@@ -19,7 +20,8 @@ NODE_CLASS_MAPPINGS = {
     **Aesthetic_MAPPING,
     **Eagle_MAPPING,
     **Experimental_MAPPING,
-    **RandomPrompt_MAPPING
+    **RandomPrompt_MAPPING,
+    **SQLite_MAPPING,
 }
 
 # Export mappings and the web directory name
